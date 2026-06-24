@@ -1,0 +1,64 @@
+.HeadSection{
+    margin-top: 220px;
+    margin-bottom: 200px;
+    /* width: 93%; */
+    /* height: 450px; */
+    margin-left: 15%;
+    width: 100%;
+
+    /* margin-left: 3.5%; */
+
+    background-color: hsl(0 0% 10% / 1);
+
+    display: block;
+}
+
+.HeadLabel{
+    word-wrap: break-word;
+    /* position: absolute; */
+
+    /* margin-top: 150px; */
+    /* margin-left: 15%; */
+
+    color: hsl(0 0% 95% / 1);
+    font-size: 40px;
+    font-family: "SFProRegular";
+
+    line-height: 48px;
+    letter-spacing: -0.5px;
+}
+.InvisibleLabel{
+    opacity: 0;
+}
+
+.HeadDescription{
+    margin-top: 25px;
+
+    width: 400px;
+    /* background-color: hsl(0 0% 40% / 1);; */
+
+    color: hsl(0 0% 55% / 1);
+    font-size: 20px;
+    font-family: "SFProRegular";
+}
+.HeadDescriptionH{
+    color: hsl(0 0% 85% / 1);
+    font-family: "SFProRegularMed";
+}
+
+.highlightedHeadLabel{
+    color: hsl(0 0% 100% / 1);
+    font-family: "SFProRegularMed";
+}
+
+@media only screen and (max-width: 550px) {
+    .HeadLabel{
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 115px;
+    }
+
+    .HeadSection{
+        height: 300px;
+    }
+}

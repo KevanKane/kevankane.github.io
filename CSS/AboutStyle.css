@@ -1,0 +1,49 @@
+.filler{
+    width: 100%;
+}
+
+.AboutHeaderSection{
+    position: fixed;
+    /* margin-top: 130px; */
+    /* margin-bottom: 200px; */
+    /* width: 93%; */
+    width: 100%;
+
+    /* margin-left: 3.5%; */
+
+    /* background-color: brown; */
+    background-color: hsl(0 0% 10% / 1);
+
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+    flex-direction: column;
+}
+.AboutHeaderSection a{
+    color: white;
+}
+.AboutHeaderLabel{
+    font-size: 15px;
+    font-family: 'VictorMono';
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.AboutHeaderTitle{
+    font-size: 35px;
+    font-family: "SFProRegularMed";
+    letter-spacing: -0.5px;
+
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.AboutScreen{
+    position: absolute;
+
+    width: 1080px;
+    height: 720px;
+
+    background-color: aqua;
+    opacity: 0.2;
+}

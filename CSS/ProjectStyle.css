@@ -1,0 +1,449 @@
+.HeaderSection{
+    margin-top: 20px;
+    margin-left: 13%;
+    width: 74%;
+    height: 65px;
+
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     
+}
+
+.BackButton{
+    position: fixed;
+    z-index: 100;
+
+    margin-left: 2%;
+    margin-top: 2%;
+
+    /* width: 100px; */
+    /* aspect-ratio: 1; */
+    border-radius: 5px;
+
+    padding: 10px;
+    padding-right: 35px;
+    padding-top: 9px;
+
+    color: hsl(0 0% 60%/1);
+    text-decoration: none;
+    font-family: "VictorMonoSemibold";
+    text-transform: uppercase;
+    font-size: 12.5px;
+
+    outline-width: 1px;
+    outline-style:solid;
+
+    outline-color: hsl(0 0% 30%/1);
+    background-color: hsl(0 0% 10% / 1);
+
+    transition: 0.2s cubic-bezier(0.33, 1, 0.68, 1);
+}
+.BackButton:hover{
+    background-color: hsl(0 0% 90%/1);
+    outline-color: hsl(0 0% 90%/1);
+    color: hsl(0 0% 10%/1);
+
+    transform: scale(1.05);
+
+    cursor: pointer;
+}
+.BackButton:hover > img{
+    opacity: 1;
+    filter: brightness(0.1);
+}
+
+.BackButton img{
+    position: absolute;
+    width: 10px;
+    
+    margin-top: 4px;
+    margin-left: 15px;
+
+    transform: scaleX(-1);
+    aspect-ratio: 1;
+
+    opacity: 0.5;
+}
+
+.Banner{
+    margin-top: 30px;
+    margin-left: 13%;
+    width: 74%;
+    height: 250px;
+
+    background-size: 105%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    border-radius: 10px;
+}
+
+.ProjectTitleSection{
+    /* background-color: aliceblue; */
+    width: 70%;
+    height: 85px;
+    margin-left: 15%;
+
+    margin-top: 20px;
+}
+
+.ProjectTitle{
+    position: absolute;
+    /* margin-left: 3.5%; */
+    margin-right: 3.5%;
+
+    font-family: 'SFProRegularMed';
+    font-size: 40px;
+    color: white;
+}
+.ProjectDate{
+    margin-right: 15%;
+    position: absolute;
+    display: block;
+
+    right: 0;
+
+    font-family: 'SFProRegular';
+    font-size: 40px;
+    color: hsl(0 0% 35% / 1);
+}
+
+.workTags{
+    position: absolute;
+    width: 100%;
+    
+    margin-right: 3.5%;
+    margin-top: 60px;
+    padding-bottom: 50px;
+
+    text-align: left;
+    align-items: center;
+}
+.workTagLabel{
+    margin-right: 3px;
+
+    background-color: hsl(0 0% 10% / 0.5);
+
+    outline-width: 1px;
+    outline-color: hsl(0 0% 30%/1);
+    outline-style:solid;
+
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    border-radius: 5px;
+
+    color: hsl(0 0% 60%/1);
+    font-family: 'VictorMonoSemibold';
+    font-size: 13px;
+
+    word-spacing: -2.5px;
+    text-transform: uppercase;
+
+    pointer-events: none;
+    user-select: none;
+}
+.workTagLabelSpecial{
+    margin-right: 3px;
+
+    outline-width: 1px;
+    outline-style:solid;
+
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    border-radius: 5px;
+
+    font-size: 13px;
+
+    word-spacing: -2.5px;
+    text-transform: uppercase;
+
+    pointer-events: none;
+    user-select: none;
+
+    background-color: #e0e0e0;
+    background: linear-gradient(0deg,rgba(224, 224, 224, 1) 0%, rgba(186, 186, 186, 1) 100%);
+    outline-color: hsl(0 0% 100%/1);
+    color: hsl(0 0% 0%/1);
+    font-family: 'VictorMonoBold';
+}
+
+.ContentContainer{
+    width: 100%;
+}
+
+
+.NormalText{
+    margin-top: 30px;
+    margin-left: 15%;
+    width: 70%;
+
+    text-align: justify;
+
+    display: block;
+    color: hsl(0 0% 85%/1);
+
+    font-family: 'SFProRegular';
+    font-size: 20px;
+    letter-spacing: 0.25px;
+    line-height: 22.5px;
+}
+.highlighted{
+    color: white;
+}
+
+.ImageSection{
+    margin-top: 40px;
+    margin-left: 15%;
+    width: 70%;
+    aspect-ratio: 1.78;
+
+    border-radius: 10px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.ImageSectionSQ{
+    margin-top: 40px;
+    margin-left: 15%;
+    width: 70%;
+    aspect-ratio: 1;
+
+    border-radius: 10px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.VideoSection{
+    margin-top: 40px;
+    margin-left: 15%;
+    width: 70%;
+
+    border-radius: 10px;
+}
+
+.projectFooterTitle{
+    /* background-color: hsl(0 0% 90%/0.1); */
+
+    margin-top: 60px;
+    margin-bottom: 20px;
+    height: 40px;
+
+    margin-left: 15%;
+    width: 70%;
+
+    display: flex;
+    align-items: center;
+}
+.projectFooterTitleTitle{
+    /* position: absolute; */
+    /* margin-left: 3.5%; */
+    margin-right: 3.5%;
+
+    font-family: 'SFProRegular';
+    font-size: 30px;
+    color: white;
+}
+
+.projectMore{
+    /* margin-left: 3.5%; */
+
+    background-color: hsl(0 0% 10% / 1);
+
+    display: grid;
+    gap: 15px;
+
+    width: 70%;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding-left: 15%;
+    padding-right: 15%;
+    /* padding-bottom: 25px; */
+}
+
+.workEmpty{
+    display: flex;
+    position: relative;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    padding-top: 80%;
+
+    /* border-radius: 10px; */
+    background-color: hsl(0, 0%, 8%);
+    border-radius: 10px;
+    /* background-size: 100%; */
+
+    transition: 0.5s;
+
+    overflow: hidden;
+
+    /* filter: invert(100%); */
+    text-align: center;
+}
+
+.workTemplate{
+    display: flex;
+    position: relative;
+
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    padding-top: 80%;
+    /* margin-bottom: 100px; */
+
+    /* border-radius: 10px; */
+    background-color: hsl(0, 0%, 40%);
+    border-radius: 10px;
+    background-size: 101%;
+    /* background-position: 30px 20px; */
+
+    outline: 2px;
+    outline-style: solid;
+    outline-color: hsl(0, 0%, 5%);
+
+    transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+
+    overflow: hidden;
+
+    /* filter: invert(100%); */
+}
+.workTemplate:hover{
+    cursor: pointer;
+    background-size: 103%;
+}
+.workTemplate:hover > .workHover{
+    opacity: 1;
+    margin-bottom: 0px;
+}
+
+.workTemplateCollider{
+    bottom: 0;
+    position: absolute;
+    /* background-color: aliceblue; */
+    width: 100%;
+    height: 100%;
+
+    z-index: 0;
+}
+
+.workHover{
+    opacity: 0;
+
+    bottom: 0;
+    position: absolute;
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+
+    margin-bottom: -10px;
+
+    background: #000000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 25%);
+}
+.workArrow{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    margin-right: 20px;
+    margin-bottom: 25px;
+
+    width: 15px;
+}
+.workTitle{
+    position: absolute;
+    bottom: 0;
+
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    color: hsl(0 0% 90% / 1);
+    font-family: 'SFProRegularMed';
+    font-size: 22.5px;
+    z-index: 1;
+}
+
+.projectFooter{
+    /* background-color: hsl(0 0% 15%/1); */
+    border-radius: 10px;
+
+    outline-width: 1px;
+    outline-style:solid;
+
+    outline-color: hsl(0 0% 20%/1);
+    /* background-color: hsl(0 0% 10% / 1); */
+
+    margin-top: 20px;
+    margin-bottom: 60px;
+    height: 57.5px;
+
+    margin-left: 15%;
+    width: 70%;
+
+    display: flex;
+    position: relative;
+}
+.FooterTitle{
+    position: absolute;
+    margin-top: 15px;
+
+    font-family: 'VictorMono';
+    font-size: 17.5px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+
+    color: hsl(0 0% 60% / 1);
+
+    margin-left: 20px;
+
+    transition: 0.2s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.backToMenu{
+    position: absolute;
+
+    right: 0;
+    margin-top: 15px;
+    margin-right: 12.5px;
+}
+.backToMenu a{
+    padding: 5px 10px;
+    /* background-color: #e0e0e0; */
+    border-radius: 2px;
+
+    font-family: 'VictorMono';
+    font-size: 17.5px;
+    /* letter-spacing: 0.2px; */
+    text-transform: uppercase;
+
+    color: hsl(0 0% 80% / 1);
+
+    /* margin-left: 5px; */
+
+    text-decoration: none;
+
+    transition: 0.1s cubic-bezier(0.33, 1, 0.68, 1);
+}
+.backToMenu a:hover{
+    cursor: pointer;
+    background-color: hsl(0 0% 95%/1);
+    color: hsl(0 0% 5%/1);
+
+    /* font-family: 'VictorMonoSemibold'; */
+    /* color: hsl(0 0% 90%/1); */
+    /* margin-left: 5px; */
+}
+

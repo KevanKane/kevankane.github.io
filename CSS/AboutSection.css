@@ -1,0 +1,255 @@
+.AboutSection{
+    width: 100%;
+    /* height: 540px; */
+    height: auto;
+
+    padding-bottom: 60px;
+
+    background-color: hsl(0 0% 5% / 1);
+}
+
+.AboutContainer{
+    margin-top: 40px;
+    margin-left: 15%;
+    margin-bottom: 40px;
+    width: 70%;
+    /* height: 300px; */
+
+    /* background-color: hsl(0 0% 15% / 1); */
+
+    display: flex;
+}
+
+.AboutText{
+    display: flex;
+    flex-direction: column;
+    /* align-items: stretch; */
+
+    justify-content: space-between;
+
+    height: 560px;
+
+    /* background-color: hsl(0 0% 100%/0.1);; */
+
+    margin-left: 50px;
+    flex: 1.2;
+
+    /* outline-style: solid; */
+    /* outline-color: hsl(0 0% 15% / 1); */
+    font-family: 'SFProRegular';
+    font-size: 21px;
+    color: hsl(0 0% 85% / 1);
+
+    text-align: justify;
+
+    line-height: 30px;
+}
+.HeadAboutMe{
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+
+    margin-top: 20px;
+    width: 160px;
+
+    text-align: center;
+
+    font-family: 'VictorMonoBold';
+    color: hsl(0 0% 85%/1);
+    letter-spacing: 1px;
+    word-spacing: -2.5px;
+    text-transform: uppercase;
+    font-size: 12px;
+
+    user-select: none;
+
+    outline-width: 2px;
+    outline-color: hsl(0 0% 30%/1);
+    outline-style:solid;
+    padding: 10px;
+    border-radius: 25px;
+
+    /* margin-left: 15%; */
+
+    /* transition: padding 0.5s cubic-bezier(0.34, 1.56, 0.64, 1); */
+}
+
+.HeadAboutMe:hover{
+    background-color: hsl(0 0% 90%/1);
+    outline-color: hsl(0 0% 100%/1);
+    color: hsl(0 0% 5%/1);
+
+    cursor: pointer;
+}
+
+.AboutPortrait{
+    flex: 1;
+    height: 500px;
+
+    border-radius: 15px;
+
+    outline-style: solid;
+    outline-color: hsl(0 0% 0% / 0.5);
+    outline-width: 2px;
+    outline-offset: -1px;
+
+    margin-bottom: 40px;
+
+    background-size: 105%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    position: relative;
+}
+.AboutPortraitData{
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    margin-bottom: -70px;
+
+    bottom: 0;
+
+    /* background-color: aqua; */
+
+    /* bottom: .5; */
+}
+.AboutPortraitName{
+    color: hsl(0 0% 90% / 1);
+    font-family: "SFProRegularMed";
+    font-size: 20px;
+}
+.AboutPortraitDate{
+    position: absolute;
+
+    color: hsl(0 0% 50% / 1);
+    font-family: "SFProRegular";
+    font-size: 20px;
+
+    width: 100%;
+    text-align: right;
+}
+.AboutPortraitDesc{
+    margin-top: 5px;
+    color: hsl(0 0% 50% / 1);
+    font-family: "SFProRegular";
+    font-size: 15px;
+}
+
+.highlighted{
+    color: hsl(0 0% 100% / 1);
+    font-family: "SFProRegularMed";
+}
+
+.ExtraAbout{
+    position: absolute;
+    text-align: right;
+    right: 0;
+
+    margin-right: 15%;
+
+    color: hsl(0 0% 75% / 1);
+    font-family: 'VictorMono';
+    font-size: 14px;
+
+    text-transform: uppercase;
+}
+
+.highlightedExtra{
+    color: hsl(0 0% 98% / 1);
+    font-family: "VictorMonoBold";
+    font-size: 18px;
+    word-spacing: -8px;
+}
+
+.Weaponry{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    margin-top: 30px;
+    margin-left: 15%;
+
+    gap: 10px;
+
+    width: 93%;
+    height: 50px;
+
+    /* background-color: hsl(0 0% 100% / .5); */
+    
+    /* height: max-content; */
+    /* grid-template-columns: repeat(4, 1fr); */
+}
+
+.WeaponryTemplate{
+    position: relative;
+    /* display: inline-block; */
+    /* position: relative; */
+    /* display: flex; */
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    width: 50px;
+
+    border-radius: 10px;
+    outline-width: 2px;
+    outline-color: hsl(0 0% 30%/1);
+    outline-style:solid;
+    z-index: 0;
+
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    /* text-align: center center; */
+}
+.WeaponryTemplate img{
+    position: absolute;
+    width: 35px;
+    transform: translate(7.5px, 7.5px);
+}
+
+.WeaponryTitle{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+    font-family: "SFProRegularMed";
+    font-size: 15px;
+    color: black;
+
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px 10px;
+
+    margin-top: -35px;
+
+    opacity: 0;
+    transition: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    pointer-events: none;
+
+    white-space: nowrap;
+}
+
+.WeaponryTemplate:hover a{
+    opacity: 1;
+    margin-top: -40px;
+}
+
+/* @media only screen and (max-width: 1000px) {
+    .AboutSection{
+        height: 1100px;
+    }
+
+    .AboutText{
+        width: 90%;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .ExtraAbout{
+        opacity: 0;
+    }
+} */

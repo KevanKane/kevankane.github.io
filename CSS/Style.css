@@ -1,0 +1,356 @@
+@font-face {font-family: 'SFProRegular';src: url(Fonts/SFProRegular.otf);}
+@font-face {font-family: 'SFProRegularMed';src: url(Fonts/SFProRegularMed.otf);}
+@font-face {font-family: 'SFProRegularSemibold';src: url(Fonts/SFProDisplaySemibold.otf);}
+@font-face {font-family: 'SFProRegularBold';src: url(Fonts/SFProRegularBold.otf);}
+
+@font-face {font-family: 'VictorMonoLight';src: url(Fonts/VictorMonoMedium.ttf);}
+@font-face {font-family: 'VictorMono';src: url(Fonts/VictorMonoRegular.ttf);}
+@font-face {font-family: 'VictorMonoSemibold';src: url(Fonts/VictorMonoSemiBold.ttf);}
+@font-face {font-family: 'VictorMonoBold';src: url(Fonts/VictorMonoBold.ttf);}
+
+body{
+    background-color: hsl(0 0% 10% / 1);
+    margin: 0;
+
+    /* margin-bottom: 500px; */
+
+    transition-timing-function: ease;
+    /* animation-delay: 1s; */
+    animation: SiteFadeIn 0.5s cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes SiteFadeIn{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+@keyframes SiteFadeOut{
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
+
+.customscroll{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+}
+
+.newHeader{
+    display: absolute;  
+    position: fixed;
+
+    z-index: 10;
+
+    width: 100%;
+    height: 80px;
+
+    outline-width: 1px;
+    outline-style: solid;
+
+    padding-top: 25px;
+
+    background-color: hsl(0, 0%, 2%, 0);
+    backdrop-filter: blur(0px);
+    outline-color: hsl(0 0% 50%/0); 
+
+    /* transition: 0.1s; */
+}
+.innerHeader{
+    height: 100%;
+    width: 70%;
+    margin-left: 15%;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 900px){
+    
+}
+
+.logoContainer{
+    position: absolute;
+    margin-top: 10px;
+    height: 45px;
+    width: 45px;
+}
+.logoContainer img{
+    position: absolute;
+    height: 45px;
+
+    user-select: none;
+    pointer-events: none;
+}
+
+.logoContainer:hover .logoHover{
+    opacity: 1;
+    transform: translate(-50%, 40px);
+}
+.logoHover{
+    opacity: 0;
+
+    user-select: none;
+    pointer-events: none;
+    
+    position: absolute;
+
+    font-family: "SFProRegular";
+    font-size: 15px;
+    color: black;
+
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px 10px;
+
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 35px);
+
+    transition: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.clock{
+    pointer-events: none;
+    position: absolute;
+    text-align: right;
+    right: 0;
+
+    align-items: center;
+
+    height: 50px;
+    width: 100%;
+
+    margin-top: -60px;
+    margin-right: 15%;
+}
+.clockLabel{
+    pointer-events: all;
+    margin-right: 0px;
+
+    text-decoration: none;
+    color: hsl(0 0% 50% / 1);
+    font-family: "VictorMonoSemibold";
+    font-size: 15px;
+
+    border-radius: 2px;
+
+    text-transform: uppercase;
+
+    /* padding: 5px 10px; */
+}
+.locLabel{
+    pointer-events: all;
+    margin-right: 0px;
+
+    text-decoration: none;
+    color: hsl(0 0% 70% / 1);
+    font-family: "VictorMonoSemibold";
+    font-size: 15px;
+
+    border-radius: 2px;
+
+    text-transform: uppercase;
+
+    /* padding: 10px; */
+    margin-left: 15px;
+}
+
+.navigations{
+    height: 100%;
+    width: 100%;
+
+    /* text-align: end; */
+    align-items: center;
+
+    -ms-transform: translateY(25%);
+    transform: translateY(25%);
+    margin-top: 7.5px;
+    margin-left: 75px;
+
+    user-select: none;
+}
+
+.navLabel{
+    /* margin-left: 5px; */
+    margin-right: 0px;
+
+    text-decoration: none;
+    color: hsl(0 0% 90% / 1);
+    font-family: "VictorMono";
+    font-size: 15px;
+
+    border-radius: 2px;
+
+    text-transform: uppercase;
+
+    padding: 5px 10px;
+
+    transition: 0.05s;
+    cursor: pointer;
+}
+
+.navLabel:hover{
+    color: hsl(0 0% 10% / 1);
+    background-color: hsl(0 0% 90% / 1);
+}
+
+.SectionTitle{
+    padding-top: 40px;
+    margin-top: 0px;
+    margin-left: 15%;
+
+    width: 70%;
+
+    color: hsl(0 0% 90% / 1);
+    font-family: 'VictorMono';
+    user-select: none;
+
+    /* position: absolute; */
+
+    font-size: 14px;
+    letter-spacing: 0.2px;
+
+    text-transform : uppercase;
+
+    /* background-color: hsl(0 0% 15% / 1); */
+}
+
+.sectionLabel a{
+    margin-left: 5px;
+    margin-top: -3.15px;
+    position: absolute;
+    /* margin-left: 2%; */
+}
+
+body:hover > #trailer{
+  opacity: 1;
+}
+#trailer{
+  height: 15px;
+  aspect-ratio: 1;
+  background-color: white;
+  /* border-radius: 20px; */
+  border-radius: 1px;
+  
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 10000;
+  
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.5s ease;
+  
+  display: flex;
+  /* place-items: center; */
+  flex-direction: column;
+  align-items: center center;
+  justify-content: center;
+
+  gap: -5px;
+}
+#trailer.select{
+    background-color: hsl(0 0% 5%/0.75);
+    backdrop-filter: blur(5px);
+}
+#trailer.contact{
+    background-color: hsl(0 0% 100%/0);
+    backdrop-filter: invert();
+}
+#trailer.invert{
+    background-color: hsl(0 0% 100%/0);
+    backdrop-filter: invert();
+}
+
+.glitch-char{
+  color: hsl(0 0% 50%/1);;
+}
+#trailer a{
+    /* background-color: aliceblue; */
+    color: white;
+    font-size: 3.5px;
+    line-height: 3.5px;
+    letter-spacing: 0.1px;
+
+    text-transform: uppercase;
+    font-family: 'VictorMono';
+
+    text-align: center;
+    /* margin-top: -0.025px; */
+
+    transition: 0.5s;
+    opacity: 0;
+}
+#trailer:not([data-type=""]) > a{
+  opacity: 1;
+  animation-delay: 1s;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background: hsl(0 0% 13% / 1);
+}
+::-webkit-scrollbar-thumb{
+    background: hsl(0 0% 18% / 1);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: hsl(0 0% 20% / 1);
+}
+::-moz-selection { /* Code for Firefox */
+    color: hsl(0 0% 2% / 1);;
+    background: hsl(0 0% 90% / 1);
+}
+::selection {
+    color: hsl(0 0% 100% / 1);;
+    background: hsl(0 0% 60% / 1);
+}
+
+#projectTransition{
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    overflow: hidden;
+
+    background-color: hsl(0 0% 5% / 1);
+    z-index: 9999;
+}
+#projectTransition img{
+    width: 75px;
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+#projectTransition a{
+    color: hsl(0 0% 80% / 1);;
+    font-family: 'SFProRegular';
+    font-size: 22.5px;
+
+    padding-bottom: 20px;
+}
+.HiddenLabel{
+    opacity: 0.1;
+}
