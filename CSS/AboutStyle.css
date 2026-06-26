@@ -1,18 +1,13 @@
-.filler{
-    width: 100%;
-}
-
 .AboutHeaderSection{
     position: fixed;
-    /* margin-top: 130px; */
-    /* margin-bottom: 200px; */
-    /* width: 93%; */
     width: 100%;
 
-    /* margin-left: 3.5%; */
+    z-index: -6;
 
-    /* background-color: brown; */
-    background-color: hsl(0 0% 10% / 1);
+    background-color: hsl(0 0% 5% / 1);
+
+    background-position: center;
+    background-size: 110%;
 
     align-items: center;
     justify-content: center;
@@ -37,13 +32,237 @@
     text-align: center;
     margin-bottom: 30px;
 }
-
-.AboutScreen{
+.AboutHeaderScroll{
     position: absolute;
+    bottom: 0;
 
-    width: 1080px;
-    height: 720px;
+    opacity: 0.65;
+    margin-bottom: 50px;
 
-    background-color: aqua;
-    opacity: 0.2;
+    letter-spacing: 1px;
+    font-size: 12.5px;
+    font-family: 'VictorMono';
+    text-transform: uppercase;
+}
+.AboutHeadFlex{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 60%;
+    height: 400px;
+
+    /* background-color: aqua; */
+    /* opacity: 0.2; */
+
+    margin-bottom: 15px;
+}
+.AboutHeadPics{
+    aspect-ratio: 3/4;
+    /* background-color: red; */
+
+    background-size: 100%;
+    background-position: center;
+
+    border-radius: 15px;
+
+    /* opacity: 0; */
+    transform: scale(0) rotateZ(5deg);
+    /* transform: rotate3d(.1, 1, .2, 45deg); */
+}
+
+/* Intro */
+.IntroSection{
+    width: 100%;
+    background-color: hsl(0 0% 10% / 1);
+
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.IntroContainer{
+    margin-left: 15%;
+    width: 70%;
+
+    display: flex;
+    flex-direction: row;
+}
+.TitleContainer{
+    min-width: 200px;
+}
+.AboutLabel{   
+    display: flex;
+    text-align: justify;
+
+    margin-bottom: 35px;
+
+    color: hsl(0 0% 90% / 1);;
+
+    font-family: "SFProRegular";
+    font-size: 25px;
+}
+
+/* Skills */
+.SkillsSection{
+    width: 100%;
+    background-color: hsl(0 0% 8% / 1);
+
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+.SkillsContainer{
+    margin-left: 15%;
+    width: 70%;
+
+    display: flex;
+    flex-direction: row;
+}
+.SkillsList{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.SkillsTitle{
+    color: hsl(0 0% 70% / 1);
+    font-family: "SFProRegular";
+    text-align: justify;
+    font-size: 20px;
+}
+.SkillsRow{
+    width: 60%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: left;
+
+    flex-direction: row;
+}
+.SkillTemplate{
+    height: 50px;
+    aspect-ratio: 1;
+
+    background-color: hsl(0 0% 15% / 1);
+    border-radius: 7.5px;
+
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: hsl(0 0% 20% / 1);
+
+    margin-right: 10px;
+
+    position: relative;
+}
+.SkillTemplate img{
+    width: 50px;
+    transform: scale(0.8);
+}
+.SkillTooltip{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 25px);
+
+    font-family: "SFProRegular";
+    font-size: 15px;
+    color: black;
+
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px 10px;
+
+    white-space: nowrap;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.SkillTemplate:hover .SkillTooltip{
+    opacity: 1;
+    transform: translate(-50%, 32.5px);
+}
+
+/* Services */
+.ServicesSection{
+    width: 100%;
+    /* height: 2000px; */
+    background-color: hsl(0 0% 10% / 1);
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.ServicesContainer{
+    margin-left: 15%;
+    width: 70%;
+
+    display: flex;
+    flex-direction: row;
+}
+.ServicesList{
+    display: flex;
+    flex-direction: column;
+    /* background-color: aquamarine; */
+    width: 100%;
+}
+.ServicesTemplate{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 35px;
+}
+.ServiceTitle{
+    text-align: left;
+    
+    color: white;
+    font-family: "SFProRegularMed";
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+.ServiceDesc{
+    text-align: left;
+
+    width: 80%;
+    
+    color: hsl(0 0% 50% / 1);
+    font-family: "SFProRegular";
+    font-size: 20px;
+}
+
+/* Collab */
+.CollabSection{
+    width: 100%;
+    /* height: 2000px; */
+    background-color: hsl(0 0% 8% / 1);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.CollabQuote{
+    margin-left: 15%;
+    color:hsl(0 0% 90% / 1);
+    display: flex;
+
+    font-family: "SFProRegularMed";
+    font-size: 30px;
+    line-height: 35px;
+    width: 650px;
+
+    position: relative;
+    margin-bottom: 30px;
+}
+.CollabResponse{
+    margin-top: 30px;
+    margin-left: 15%;
+}
+.CollabResponse a{
+    color: hsl(0 0% 70% / 1);
+    font-family: "SFProRegular";
+    font-size: 20px;
+    text-align: justify;
+
+    width: 65%;
+    margin-left: 200px;
+    display: flex;
+
+    margin-bottom: 25px;
 }

@@ -11,17 +11,17 @@
   <link rel="shortcut icon" href="Images/Logo.ico" media="(prefers-color-scheme: dark)">
   <link rel="shortcut icon" href="Images/LogoLight.ico" media="(prefers-color-scheme: light)">
 </head>
-<body>
+<body style="background-color: black;">
   <header class="newHeader" id="mainHeader">
     <div class="innerHeader">
-      <div class="logoContainer">
+      <div class="logoContainer" id="backToHome" data-href="site.html">
         <img src="Images/KevanKaneLogoSingular.png">
         <a class="logoHover">KevKane</a>
       </div>
 
       <div class="navigations">
-        <a class="navLabel" data-value="Home" data-href="site.html">Home</a>
         <a class="navLabel" data-value="Work" data-href="work.html">Work</a>
+        <a class="navLabel" data-value="About" data-href="about.html">About</a>
         <a class="navLabel" data-value="Contact" id="Contact" href="#contact">Contact</a>
       </div>
 
@@ -116,14 +116,197 @@
     <a>Verdant Sailor</a>
   </div>
 
-  <div class="customscroll" id="headSection">
-    <div class="filler" style="height: 10000px;"></div>
-  </div>
-  
-  <div class="AboutHeaderSection" id="aboutHead">
+    <div class="AboutHeaderSection" id="aboutHead" style="background-image: url(Images/Portraits/Wide.png)">
     <a class="AboutHeaderLabel">[ ALL IN OR NOTHING ]</a>
     <a class="AboutHeaderTitle">devoting my passions<br>into digital’s tapestry.</a>
-    <div class="AboutScreen"></div>
+    <a class="AboutHeaderScroll">scroll down</a>
+    <div class="AboutHeadFlex">
+      <div class="AboutHeadPics" id="a_head1" style="background-image: url(Images/Portraits/Head2.png)"></div>
+      <div class="AboutHeadPics" id="a_head3" style="background-image: url(Images/Portraits/Head1.png)"></div>
+      <div class="AboutHeadPics" id="a_head2" style="background-image: url(Images/Portraits/Head5.png)"></div>
+    </div>
+  </div>
+
+  <div class="customscroll" id="headSection">
+    <div style="width: 100%; height: 1750px;"></div>
+    <div class="IntroSection">
+      <div class="IntroContainer">
+        <div class="TitleContainer">
+          <div class="SectionTitle" style="margin-left: 0px; padding-top: 0px;">
+            <img src="Images/ArrowRight.png" width="11">
+            <a style="user-select: text;">Introduction</a>
+          </div>
+        </div>
+        <div>
+          <a class="AboutLabel">
+            Hello my name is Kevan Kaneakram and im a Game Developer and Graphic Designer born
+            and raised in Bandung, Indonesia.
+          </a>
+          <a class="AboutLabel">
+            Growing up, I was the kind of kid who could spend hours creating anything. Whether it was
+            drawing on paper, tinkering on a computer, building with LEGO, taking photographs, or even
+            making short films for a while, I was always drawn to the process of creating.
+          </a>
+          <a class="AboutLabel">
+            Looking back, I think game development has always been at the back of my mind. As a kid,
+            I would create my own games entirely on paper, sketching interfaces, inventing mechanics,
+            and dreaming up worlds of my own. Long before I knew how to actually make games, way 
+            long before I learned how to code.
+          </a>
+          <a class="AboutLabel">
+            That same creative curiosity naturally found its way into graphic design. I love illustrating
+            and crafting memorable brand identities. Beyond imagining games of my own, I also found myself
+            reimagining existing brands and redesigning their packaging, simply because I enjoyed exploring
+            how things could be made more distinctive and meaningful.
+          </a>
+        </div>  
+      </div>        
+    </div>
+    <div class="SkillsSection">
+      <div class="SkillsContainer">
+        <div class="TitleContainer">
+          <div class="SectionTitle" style="margin-left: 0px; padding-top: 0px;">
+            <img src="Images/ArrowRight.png" width="11">
+            <a style="user-select: text;">Essentials</a>
+          </div>
+        </div>
+        <div class="SkillsList">
+          <a class="SkillsTitle">
+            Multiple disciplines means working across multiple tools. Whether I'm building a game,
+            designing graphics, modelling 3D assets, or directing a visual production, these are the tools I rely on to bring ideas to life.
+          </a>
+          <div class="SkillsRow">
+            <div class="SkillTemplate">
+              <img src="Images/Toolkits/Unity.png">
+              <a class="SkillTooltip">Unity</a>
+            </div>
+            <div class="SkillTemplate">
+              <img src="Images/Toolkits/Blender.png">
+              <a class="SkillTooltip">Blender</a>
+            </div>
+            <div class="SkillTemplate">
+              <img src="Images/Toolkits/Photoshop.png">
+              <a class="SkillTooltip">Photoshop</a>
+            </div>
+            <div class="SkillTemplate">
+              <img src="Images/Toolkits/Illustrator.png">
+              <a class="SkillTooltip">Illustrator</a>
+            </div>
+            <div class="SkillTemplate">
+              <img src="Images/Toolkits/Premiere.png">
+              <a class="SkillTooltip">Premiere Pro</a>
+            </div>
+            <div class="SkillTemplate">
+              <img src="Images/Toolkits/CSharp.png">
+              <a class="SkillTooltip">C#</a>
+            </div>
+            <div class="SkillTemplate">
+              <img src="Images/Toolkits/HTML.png">
+              <a class="SkillTooltip">HTML</a>
+            </div>
+            <div class="SkillTemplate">
+              <img src="Images/Toolkits/CSS.png">
+              <a class="SkillTooltip">CSS</a>
+            </div>
+            <div class="SkillTemplate">
+              <img src="Images/Toolkits/JavaScript.png">
+              <a class="SkillTooltip">JavaScript</a>
+            </div>
+            <div class="SkillTemplate">
+              <img src="Images/Toolkits/Github.png">
+              <a class="SkillTooltip">Github</a>
+            </div>
+          </div>
+          <div class="SkillsRow">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ServicesSection">
+      <div class="ServicesContainer">
+        <div class="TitleContainer">
+          <div class="SectionTitle" style="margin-left: 0px; padding-top: 0px;">
+            <img src="Images/ArrowRight.png" width="11">
+            <a style="user-select: text;">Services</a>
+          </div>
+        </div>
+        <div class="ServicesList">
+          <div class="ServicesTemplate">
+            <a class="ServiceTitle">Creative Direction</a>
+            <a class="ServiceDesc">
+              Developing visual concepts and directing their execution across graphics, photography, video,
+              and advertising. From concept to execution, I make sure every element works together with purpose.
+            </a>
+          </div>
+          <div class="ServicesTemplate">
+            <a class="ServiceTitle">Graphic Design & Illustration</a>
+            <a class="ServiceDesc">
+              Creating visuals that communicate clearly and leave a lasting impression. Whether
+              it's illustrations, promotional materials, or digital assets, every piece is crafted with intention.
+            </a>
+          </div>
+          <div class="ServicesTemplate">
+            <a class="ServiceTitle">Brand Design / Redesign</a>
+            <a class="ServiceDesc">
+              Building brands with memorable identities, or refining existing ones without losing what makes them
+              recognizable. A strong brand is more than just a logo—it's a story people can remember.
+            </a>
+          </div>
+          <div class="ServicesTemplate">
+            <a class="ServiceTitle">3D Modelling & Texturing</a>
+            <a class="ServiceDesc">
+              Designing stylized and game-ready 3D assets with attention to form, material, and presentation. Every
+              model is built to support both aesthetics and functionality.
+            </a>
+          </div>
+          <div class="ServicesTemplate">
+            <a class="ServiceTitle">UI/UX Design</a>
+            <a class="ServiceDesc">
+              Designing interfaces that are intuitive, functional, and visually engaging. Great user experiences
+              happen when usability and aesthetics work hand in hand.
+            </a>
+          </div>
+          <div class="ServicesTemplate">
+            <a class="ServiceTitle">Video Editing & Motion Design</a>
+            <a class="ServiceDesc">
+              Bringing visuals to life through editing, motion, and rhythm. Whether it's a cinematic sequence or
+              a motion graphic, timing and purpose are at the core of every frame.
+            </a>
+          </div>
+          <div class="ServicesTemplate">
+            <a class="ServiceTitle">Web Development</a>
+            <a class="ServiceDesc">
+              Bringing ideas to the web through thoughtful design and clean implementation. I build responsive websites
+            that prioritize clarity, usability, and a cohesive visual experience.
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <div class="CollabSection">
+      <a class="CollabQuote">" Aren't you a Game Developer? Why don't you offer game development related services? "</a>
+      <div class="CollabResponse">
+        <a>
+          Game development isn't a service I actively offer—it's where many of my disciplines come together.
+          It's the medium through which I express my ideas, combining design, programming, art, storytelling,
+          and direction into a single experience.
+        </a>
+        <a>
+          Most of that work happens within my own studio alongside my team, where I lead each project from the
+          ground up. While certain disciplines, such as additional 3D assets or sound, are collaborative efforts,
+          the overall creative vision and the majority of the development are mostly driven by me.
+        </a>
+        <a>
+          Game development is featured throughout this portfolio not because it's a service I sell, but because
+          it's the strongest representation of how I think, create, and solve problems. Every discipline I work
+          in ultimately feeds back into that process.
+        </a>
+        <a>
+          That said, I'm always open to a conversation. If you believe your project aligns with what I value or
+          you're looking to create something truly meaningful together, I'd love to hear about it.
+        </a>
+      </div>
+    </div>
   </div>
 </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>

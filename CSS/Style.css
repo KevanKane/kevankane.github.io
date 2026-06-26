@@ -89,7 +89,10 @@ body{
     height: 45px;
 
     user-select: none;
-    pointer-events: none;
+    /* pointer-events: none; */
+}
+.logoContainer :hover{
+    cursor: pointer;
 }
 
 .logoContainer:hover .logoHover{

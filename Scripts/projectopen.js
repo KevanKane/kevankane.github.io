@@ -64,8 +64,16 @@ if(allContact){
         });
     }
 }
+var mainLogo = document.getElementById("backToHome");
 var allHeaderNav = document.getElementsByClassName("navLabel");
 if(allHeaderNav){
+    if(mainLogo){
+        mainLogo.addEventListener("click", () => {
+            const href = mainLogo.dataset.href;
+            FadeBack(href);
+        });
+    }
+
     for (const element of allHeaderNav) {
         // console.log(child.innerHTML); 
         element.addEventListener("click", () => {

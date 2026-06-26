@@ -21,7 +21,6 @@ const allElements = [
     ...document.getElementsByClassName('VideoSection')
 ];
 
-var animatedOffset = 0;
 function playAnimation(duration) {
     const startTime = performance.now();
 
