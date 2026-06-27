@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/Style.css"> <!-- MainSite & Header -->
+  <link rel="stylesheet" href="CSS/ProjectStyle.css"> <!-- Project -->
+
+  <title>Kevan Kane</title>
+  <link rel="shortcut icon" href="Images/Logo.ico" media="(prefers-color-scheme: dark)">
+  <link rel="shortcut icon" href="Images/LogoLight.ico" media="(prefers-color-scheme: light)">
+</head>
+<body> 
+  <a class="BackButton" data-href="work.html">
+    Back to Work
+    <img src="Images/Open.png"></img>
+  </a>
+  <div id="projectTransition">
+    <img src="Images/KevanKaneLogoSingular.png">
+    <a>Verdant Sailor</a>
+  </div>
+
+  <div class="customscroll">
+    <div class="HeaderSection">
+      <div class="logoContainer">
+        <img src="Images/KevanKaneLogoSingular.png">
+        <a class="logoHover">KevKane</a>
+      </div>
+    </div>
+    <div class="Banner" id="banner" style="background-image: url(Images/ActionCards/Banner.png);"></div>
+    <div class="ProjectTitleSection">
+      <div class="ProjectTitle" id="headLabel">Cards of DECKRYPT</div>
+      <div class="ProjectDate">2026</div>
+
+      <div class="workTags">
+        <a class="workTagLabel">DECKRYPT</a>
+        <a class="workTagLabel">Illustration</a>
+        <a class="workTagLabel">Ongoing</a>
+      </div>
+    </div>
+
+    <div class="ContentContainer">
+      <p class="NormalText">
+        Individually illustrated cards developed for my upcoming roguelike RPG <a href="work_DECKRYPT.html" class="highlighted">DECKRYPT</a>.
+      </p>
+
+      <a class="TitleText">Action Cards</a>
+      <a class="NormalText">
+        These action cards represent the player's action as the name suggests, Attack, Enhance, Hinder, and Restore.
+        Inspired by traditional poker playing cards, they feature a mirrored layout that maintains a consistent
+        appearance when viewed from either the player's or the opponent's perspective.
+      </a>
+      <div class="ImageSection" style="background-image: url(Images/ActionCards/Cards1.png);"></div>
+      <div class="ImageSection" style="background-image: url(Images/ActionCards/Cards2.png);"></div>
+
+      <a class="TitleText">Equipment Cards</a>
+      <a class="NormalText">
+        For the Equipment Cards, I took a more freeform approach since they are permanently displayed on the right
+        side of the player's table, representing the player's equipped items, similar to equipment in a Dungeons
+        & Dragons game. This also helps establish a clear visual distinction between the Equipment Cards and the Action Cards.
+      </a>
+      <div class="ImageSection" style="background-image: url(Images/ActionCards/Equip1.png);"></div>
+      <div class="ImageSection" style="background-image: url(Images/ActionCards/Equip2.png);"></div>
+      <div class="ImageSection" style="background-image: url(Images/ActionCards/Equip3.png);"></div>
+    </div>
+
+    <div class="projectFooterTitle">
+      <div class="projectFooterTitleTitle" id="footerTitle">More Work</div>
+    </div>
+
+    <div class="projectMore" id="moreProject">
+      <div class="workTemplate" data-href="work_DECKRYPT.html" style="background-image: url(Images/Deckrypt/Thumbnail.png)">
+        <a class="workTemplateCollider"></a>
+
+        <div class="workHover">
+          <a class="workTitle">DECKRYPT</a>
+          <img class="workArrow" src="Images/Open.png">
+        </div>
+      </div>
+      <div class="workTemplate" data-href="work_SatuAsistensiLagi.html" data-type="Satu Asistensi Lagi" style="background-image: url(Images/SatuAsistensiLagi/Normal.png)">
+        <a class="workTemplateCollider"></a>
+
+        <div class="workHover">
+          <a class="workTitle">Satu Asistensi Lagi</a>
+          <img class="workArrow" src="Images/Open.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="projectFooter">
+      <a class="FooterTitle" id="footerDesc">devoting my passions into digital’s tapestry</a>
+      <div class="backToMenu">
+        <a class="menuJump" data-value="Home" data-href="index.html">Home</a>
+        <a class="menuJump" data-value="Work" data-href="work.html">Work</a>
+        <a class="menuJump" data-value="About" data-href="about.html">About</a>
+      </div>
+    </div>
+  </div>
+</body>
+  <script src="Scripts/customscroll_project.js"></script>
+  <script src="Scripts/letterscramble.js"></script>
+  <script src="Scripts/projectopen.js"></script>
+</html>

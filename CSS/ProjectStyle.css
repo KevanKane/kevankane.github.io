@@ -195,6 +195,22 @@
     color: white;
 }
 
+.TitleText{
+    margin-top: 60px;
+    margin-left: 15%;
+    width: 70%;
+
+    text-align: justify;
+
+    display: block;
+    color: hsl(0 0% 100%/1);
+
+    font-family: 'SFProRegularMed';
+    font-size: 25px;
+    letter-spacing: 0.25px;
+    line-height: 22.5px;
+}
+
 .ImageSection{
     margin-top: 40px;
     margin-left: 15%;
@@ -224,6 +240,15 @@
     margin-top: 40px;
     margin-left: 15%;
     width: 70%;
+
+    border-radius: 10px;
+}
+
+.YoutubeSection{
+    margin-top: 40px;
+    margin-left: 15%;
+    width: 70%;
+    aspect-ratio: 16/9;
 
     border-radius: 10px;
 }

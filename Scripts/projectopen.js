@@ -47,6 +47,10 @@ function playAnimation(duration) {
     requestAnimationFrame(frame);
 }
 
+window.addEventListener("load", () => {
+  document.body.classList.add("loaded");
+});
+
 window.addEventListener("pageshow", (event) => {
     document.body.style.opacity = 1;
     projectTransition.style.height = "0%";

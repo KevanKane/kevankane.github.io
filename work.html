@@ -83,9 +83,9 @@
       <div class="ContactMenuBox" style="flex: 1;">
         <ul class="ContactList">
           <a class="ContactListTitle">[ Menu ]</a>
-          <li><a class="Contact" data-value="Home" data-href="site.html">Home</li>
-          <li><a class="Contact" data-value="Work" href="#portfolio">Work</li>
-          <li><a class="Contact" data-value="About" href="#about">About</li>
+          <li><a class="Contact" data-value="Home" data-href="index.html">Home</li>
+          <li><a class="Contact" data-value="Work" data-href="work.html">Work</li>
+          <li><a class="Contact" data-value="About" data-href="about.html">About</li>
         </ul>
       </div>
       <!-- <div class="ContactMenuBox">
@@ -117,6 +117,12 @@
     <a>Verdant Sailor</a>
   </div>
 
+  <div id="phoneBlocker">
+    <img src="Images/KevanKaneLogoSingular.png">
+    <a>Site isn't viewable through mobile devices at the moment, sorry for the inconvinience!</a>
+    <a style="color: hsl(0 0% 30% / 1);">Not currently on mobile?<br>Try refreshing the page.</a>
+  </div>
+
   <div class="customscroll" id="headSection">
     <div class="projectHeader">
       <a class="headerTitle" id="projectHeader">Selected Works</a>
@@ -124,7 +130,7 @@
     </div>
 
     <div class="ProjectSection" id="projectSection">
-      <div class="workTemplate" style="background-image: url(Images/Verdant/Thumbnail.png)">
+      <div class="workTemplate" data-href="work_Verdant.html" style="background-image: url(Images/Verdant/Thumbnail.png)">
         <a class="workTitle">Verdant Sailor</a>
         <a class="workCount">#03</a>
         <div class="workTags">
@@ -133,7 +139,7 @@
           <a class="workTagLabel">Remastered</a>
         </div>
       </div>
-      <div class="workTemplate" data-type="Verdant Sailor" style="background-image: url(Images/Deckrypt/Thumbnail.png)">
+      <div class="workTemplate" data-href="work_DECKRYPT.html" style="background-image: url(Images/Deckrypt/Thumbnail.png)">
         <a class="workTitle">DECKRYPT</a>
         <a class="workCount">#03</a>
         <div class="workTags">
@@ -142,7 +148,16 @@
           <a class="workTagLabel">Ongoing</a>
         </div>
       </div>
-      <div class="workTemplate" data-type="TougeVenture" style="background-image: url(Images/Touge/Normal.png)">
+      <div class="workTemplate" data-href="work_ActionCards.html" style="background-image: url(Images/ActionCards/Thumbnail.png)">
+        <a class="workTitle">Cards of DECKRYPT</a>
+        <a class="workCount">#03</a>
+        <div class="workTags">
+          <a class="workTagLabel">DECKRYPT</a>
+          <a class="workTagLabel">Illustration</a>
+          <a class="workTagLabel">Ongoing</a>
+        </div>
+      </div>
+      <div class="workTemplate" data-href="work_Touge.html" style="background-image: url(Images/Touge/Normal.png)">
         <a class="workTitle">TougeVenture</a>
         <a class="workCount">#01</a>
         <div class="workTags">
@@ -151,7 +166,7 @@
           <a class="workTagLabel">In Halt</a>
         </div>
       </div>
-      <div class="workTemplate"  data-type="Markers" style="background-image: url(Images/BunBun/Thumbnail.png)">
+      <div class="workTemplate" data-href="work_BunBun.html" style="background-image: url(Images/BunBun/Thumbnail.png)">
         <a class="workTitle">BunBun Bakery</a>
         <a class="workCount">#02</a>
         <div class="workTags">
@@ -162,6 +177,15 @@
       </div>
       <div class="workTemplate" data-href="work_Monogram.html" style="background-image: url(Images/Monogram/Thumbnail.png)">
         <a class="workTitle">Monogram Study</a>
+        <a class="workCount">#02</a>
+        <div class="workTags">
+          <a class="workTagLabel">College</a>
+          <a class="workTagLabel">Typography</a>
+          <a class="workTagLabel">Illustration</a>
+        </div>
+      </div>
+      <div class="workTemplate" data-href="work_Saltwater.html" style="background-image: url(Images/Saltwater/Thumbnail.png)">
+        <a class="workTitle">Saltwater Creatures</a>
         <a class="workCount">#02</a>
         <div class="workTags">
           <a class="workTagLabel">College</a>
@@ -220,8 +244,8 @@
     <div class="projectFooter"></div>
   </div>
 </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+  <!-- <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script> -->
   <script src="Scripts/customscroll.js"></script>
   <script src="Scripts/header.js"></script>
   <script src="Scripts/trailer.js"></script>

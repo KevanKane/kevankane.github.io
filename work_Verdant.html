@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/Style.css"> <!-- MainSite & Header -->
+  <link rel="stylesheet" href="CSS/ProjectStyle.css"> <!-- Project -->
+
+  <title>Kevan Kane</title>
+  <link rel="shortcut icon" href="Images/Logo.ico" media="(prefers-color-scheme: dark)">
+  <link rel="shortcut icon" href="Images/LogoLight.ico" media="(prefers-color-scheme: light)">
+</head>
+<body> 
+  <a class="BackButton" data-href="work.html">
+    Back to Work
+    <img src="Images/Open.png"></img>
+  </a>
+  <div id="projectTransition">
+    <img src="Images/KevanKaneLogoSingular.png">
+    <a>Verdant Sailor</a>
+  </div>
+
+  <div class="customscroll">
+    <div class="HeaderSection">
+      <div class="logoContainer">
+        <img src="Images/KevanKaneLogoSingular.png">
+        <a class="logoHover">KevKane</a>
+      </div>
+    </div>
+    <div class="Banner" id="banner" style="background-image: url(Images/Verdant/Banner.png);"></div>
+    <div class="ProjectTitleSection">
+      <div class="ProjectTitle" id="headLabel">Verdant Sailor</div>
+      <div class="ProjectDate">2026</div>
+
+      <div class="workTags">
+        <a class="workTagLabelSpecial">Game</a>
+        <a class="workTagLabel">Game Jam</a>
+        <a class="workTagLabel">Remastered</a>
+      </div>
+    </div>
+
+    <div class="ContentContainer">
+      <a class="NormalText">
+        Verdant Sailor is a top-down sailing game where you journey across a dying world, delivering Seeds of Life to restore what was lost.
+        Battle corrupted sea creatures, establish trade routes, build your fortune, and upgrade your vessel as you venture deeper into dangerous waters.
+      </a> 
+      <a class="NormalText">
+        Originally developed as a submission for a 2024 Game Jam, this project was created over the course of approximately less than a month.
+        Two years later, We revisited and remastered the game, driven by both nostalgia and the opportunity to expand upon the original vision
+        by implementing features and assets that were cut during the Game Jam due to time constraints.
+      </a>
+      <video class="VideoSection" autoplay loop muted src="Images/Verdant/Trailer_Clip.mp4"></video>
+      <p class="NormalText">Clips from the YouTube Trailer, available to watch here:
+        <a href="https://youtu.be/6XVi84QL6y4?si=6l9Fd39X1WVqhduE" target="_blank" class="highlighted">Verdant Sailor - Official Trailer</a>
+      </p>
+
+      <a class="NormalText">
+        The remaster significantly expands the original experience under the new title, "Verdant Sailor: Full Voyage." True to its name, this
+        edition restores and completes the content originally envisioned during the 2024 development, bringing the project closer to its intended
+        scope. Despite the additional development and polish, the game remains completely free to play, reflecting our commitment to sharing it
+        as a genuine passion project and a labor of love.
+      </a>     
+
+      <a class="TitleText">Full Buoyancy & Water Physics</a>
+      <a class="NormalText">
+        One of the spotlight feature this game has is full buoyancy and water physics, unlike just flat out sea plane, this game features a 3D
+        procedural moving water waves. Complete with a stylized shader accompanying the beautiful 3D water.
+      </a>
+      <div class="ImageSection" style="background-image: url(Images/Verdant/Image2.jpg);"></div>
+      <video class="VideoSection" autoplay loop muted src="Images/Verdant/WaveShowcase.mp4"></video>
+      <a class="NormalText">
+        We achieved this effect by combining multiple sine waves to emulate the fluidity of ocean waves. Then it is put into a function that
+        offsets the vertices on the horizontal axis to form sharper peaks, this process turns it into gerstner waves. While not a physically
+        accurate fluid simulation, this approach recreates the natural rise and fall of ocean waves with minimal computational cost.
+      </a>
+      <a class="NormalText">
+        Although it doesn't significantly impact the gameplay, the dynamic ocean surface improves the experience to be more immersive than just
+        sailing on a flat sea plane
+      </a>
+
+      <a class="TitleText">Gameplay Loop</a>
+      <a class="NormalText">
+        You are entrusted with delivering the Seed of Life to cleanse a total of five islands. Each island you restore unlocks new trade
+        routes, granting access to increasingly rare and exotic spices. As your journey progresses, you'll expand your trading network,
+        grow your wealth, and build a thriving maritime enterprise while bringing life back to the archipelago.
+      </a>
+      <div class="ImageSection" style="background-image: url(Images/Verdant/Image3.jpg);"></div>
+      <div class="ImageSection" style="background-image: url(Images/Verdant/Image4.jpg);"></div>
+
+      <a class="NormalText">
+        The corrupted seas are far from safe, with dangerous creatures lurking beneath the waves. Throughout your voyage, you'll encounter
+        hostile enemies that will stop at nothing to sink your vessel. Fortunately, your ship is equipped with powerful cannons, allowing
+        you to defend yourself and overcome the threats that stand between you and your destination.
+      </a>
+      <div class="ImageSection" style="background-image: url(Images/Verdant/Image5.jpg);"></div>
+      <div class="ImageSection" style="background-image: url(Images/Verdant/Image6.jpg);"></div>
+      <a class="NormalText">
+        The Tainted-Ray is also a new addition to the Full Voyage edition, giving more variation to the enemies present in the GameJam Release.
+      </a>
+
+      <a class="TitleText">More 'Full Voyage' Features</a>
+      <a class="NormalText">
+        One of the features absent from the original Game Jam release was a proper day-and-night cycle. I implemented a dynamic lighting system
+        that transitions seamlessly between day and night, while the islands emit baked lighting after sunset to create a warmer, more atmospheric
+        environment. To help players keep track of the passage of time, I also designed a simple time indicator. Rather than displaying a
+        conventional clock, it communicates the current time of day through descriptive names, making the game feels more immersive.
+      </a>
+      <video class="VideoSection" autoplay loop muted src="Images/Verdant/daytime.mp4"></video>
+      <a class="NormalText">
+        As a final tribute to the project, beside countless of bug fixings we gave the game the ending it always deserved. Upon successfully cleansing all five islands, players
+        unlock an entirely new final boss encounter, providing a climactic conclusion that was originally planned but could not be realized during
+        the Game Jam. This addition completes the experience and brings the original vision to life.
+      </a>
+      <video class="VideoSection" autoplay loop muted src="Images/Verdant/bossfight.mp4"></video>
+      <a class="NormalText">
+        And to let players prepare their vessel to confront the new Goblin Leviathan, I introduced an unlockable
+        boatsmith who becomes available as the game progresses. Allowing players to upgrade their
+        boat so it can withstand the Leviathan's attacks.
+      </a>
+      <div class="ImageSection" style="background-image: url(Images/Verdant/Image7.jpg);"></div>
+      <a class="NormalText">
+        The game is available free to play on Itch.io, grab yourself a copy, set sail, and embark on your journey
+        across the seas to restore the islands and uncover the adventure that awaits.
+      </a>
+      <p class="NormalText">Itch.io link:
+        <a href="" target="_blank" class="highlighted">Verdant Sailor: Full Voyage</a>
+      </p>
+    </div>
+
+    <div class="projectFooterTitle">
+      <div class="projectFooterTitleTitle" id="footerTitle">More Work</div>
+    </div>
+
+    <div class="projectMore" id="moreProject">
+      <div class="workTemplate" data-href="work_DECKRYPT.html" style="background-image: url(Images/Deckrypt/Thumbnail.png)">
+        <a class="workTemplateCollider"></a>
+
+        <div class="workHover">
+          <a class="workTitle">DECKRYPT</a>
+          <img class="workArrow" src="Images/Open.png">
+        </div>
+      </div>
+      
+      <div class="workTemplate" data-href="work_Saltwater.html" style="background-image: url(Images/Saltwater/Thumbnail.png)">
+        <a class="workTemplateCollider"></a>
+
+        <div class="workHover">
+          <a class="workTitle">Saltwater Creatures</a>
+          <img class="workArrow" src="Images/Open.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="projectFooter">
+      <a class="FooterTitle" id="footerDesc">devoting my passions into digital’s tapestry</a>
+      <div class="backToMenu">
+        <a class="menuJump" data-value="Home" data-href="index.html">Home</a>
+        <a class="menuJump" data-value="Work" data-href="work.html">Work</a>
+        <a class="menuJump" data-value="About" data-href="about.html">About</a>
+      </div>
+    </div>
+  </div>
+</body>
+  <script src="Scripts/customscroll_project.js"></script>
+  <script src="Scripts/letterscramble.js"></script>
+  <script src="Scripts/projectopen.js"></script>
+</html>

@@ -18,7 +18,8 @@ moreProject = document.getElementById("moreProject");
 const allElements = [
     ...document.getElementsByClassName('NormalText'),
     ...document.getElementsByClassName('ImageSection'),
-    ...document.getElementsByClassName('VideoSection')
+    ...document.getElementsByClassName('VideoSection'),
+    ...document.getElementsByClassName('TitleText')
 ];
 
 function playAnimation(duration) {
@@ -69,7 +70,7 @@ function smoothScroll(){
     for (const element of allElements){
         var elementPos = element.getBoundingClientRect().top + offset;
         var elementHeight = element.getBoundingClientRect().height;
-        var ContactValue = (offset-elementPos+clientHeight-100)/(elementHeight+200);
+        var ContactValue = (offset-elementPos+clientHeight-50)/(elementHeight+150);
         ContactValue = Math.min(Math.max(ContactValue, 0), 1);
 
         element.style.opacity = 0.05 + ContactValue;

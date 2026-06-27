@@ -84,9 +84,9 @@
       <div class="ContactMenuBox" style="flex: 1;">
         <ul class="ContactList">
           <a class="ContactListTitle">[ Menu ]</a>
-          <li><a class="Contact" data-value="Home" data-href="site.html">Home</li>
+          <li><a class="Contact" data-value="Home" data-href="index.html">Home</li>
           <li><a class="Contact" data-value="Work" data-href="work.html">Work</li>
-          <li><a class="Contact" data-value="About" href="#about">About</li>
+          <li><a class="Contact" data-value="About" data-href="about.html">About</li>
         </ul>
       </div>
     </div>
@@ -110,6 +110,12 @@
     <a>Verdant Sailor</a>
   </div>
 
+  <div id="phoneBlocker">
+    <img src="Images/KevanKaneLogoSingular.png">
+    <a>Site isn't viewable through mobile devices at the moment, sorry for the inconvinience!</a>
+    <a style="color: hsl(0 0% 30% / 1);">Not currently on mobile?<br>Try refreshing the page.</a>
+  </div>
+
   <div class="customscroll" id="headSection">
     <div class="HeadSection">
       <a class="HeadLabel" id="headLabel">
@@ -121,7 +127,7 @@
     </div>
 
     <div class="ProjectSection" id="projectSection">
-      <div class="workTemplate" style="background-image: url(Images/Verdant/Thumbnail.png)">
+      <div class="workTemplate" data-href="work_Verdant.html" style="background-image: url(Images/Verdant/Thumbnail.png)">
         <a class="workTitle">Verdant Sailor</a>
         <a class="workCount">#01</a>
         <div class="workTags">
@@ -130,7 +136,7 @@
           <a class="workTagLabel">Remastered</a>
         </div>
       </div>
-      <div class="workTemplate" style="background-image: url(Images/Deckrypt/Thumbnail.png)">
+      <div class="workTemplate" data-href="work_DECKRYPT.html" style="background-image: url(Images/Deckrypt/Thumbnail.png)">
         <a class="workTitle">DECKRYPT</a>
         <a class="workCount">#02</a>
         <div class="workTags">
@@ -148,13 +154,13 @@
           <a class="workTagLabel">Visual Design</a>
         </div>
       </div>
-      <div class="workTemplate" data-href="work_Markers.html" data-type="Markers" style="background-image: url(Images/Markers/Image1.png)">
-        <a class="workTitle">Markers</a>
-        <a class="workCount">#04</a>
+      <div class="workTemplate" data-href="work_Touge.html" style="background-image: url(Images/Touge/Normal.png)">
+        <a class="workTitle">TougeVenture</a>
+        <a class="workCount">#01</a>
         <div class="workTags">
-          <a class="workTagLabel">Brand Design</a>
-          <a class="workTagLabel">Product Design</a>
-          <a class="workTagLabel">3D</a>
+          <a class="workTagLabelSpecial">Game</a>
+          <a class="workTagLabel">Independent Project</a>
+          <a class="workTagLabel">In Halt</a>
         </div>
       </div>
       <!-- <div class="workEmpty"></div> -->
@@ -211,39 +217,12 @@
             More About Me
           </a>
         </div>
-      </div>      
-
-      <!-- <div class="SectionTitle" style="margin-top: 15px;">
-        <img src="Images/ArrowRight.png" width="11">
-        <a style="user-select: text;">My Creative Toolbox</a>
-      </div>
-      <div class="Weaponry">
-        <div class="WeaponryTemplate">
-          <img src="Images/Weaponries/Unity.png"></img>
-          <a class="WeaponryTitle">Unity</a>
-        </div>
-        <div class="WeaponryTemplate">
-          <img src="Images/Weaponries/Blender.png"></img>
-          <a class="WeaponryTitle">Blender</a>
-        </div>
-        <div class="WeaponryTemplate">
-          <img src="Images/Weaponries/Photoshop.png"></img>
-          <a class="WeaponryTitle">Adobe Photoshop</a>
-        </div>
-        <div class="WeaponryTemplate">
-          <img src="Images/Weaponries/Illustrator.png"></img>
-          <a class="WeaponryTitle">Adobe Illustrator</a>
-        </div> -->
-        <!-- <div class="WeaponryTemplate">
-          <img src="Images/Weaponries/VSCode.png"></img>
-          <a class="WeaponryTitle">VS Code</a>
-        </div> -->
-      </div>
+      </div> 
     </div>
   </div>
 </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+  <!-- <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script> -->
   <script src="Scripts/customscroll.js"></script>
   <script src="Scripts/header.js"></script>
   <script src="Scripts/trailer.js"></script>

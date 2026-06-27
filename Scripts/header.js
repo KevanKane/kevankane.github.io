@@ -151,6 +151,9 @@ function RelabelWorks(){
   }
 }
 
+if(window.innerHeight < window.innerWidth){
+  document.getElementById('phoneBlocker').classList.add("disable");
+}
 window.addEventListener("load", () => {
   document.body.classList.add("loaded");
 });

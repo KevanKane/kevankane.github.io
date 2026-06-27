@@ -40,8 +40,10 @@ var offset = 0;
 let aboutHAnimation = false;
 let aboutHScroll = 0;
 function smoothScroll(){
-    let wrapHeight = scrollWrap.getBoundingClientRect().height;
-    body.style.height = Math.round(wrapHeight) + "px";
+    if(window.innerHeight < window.innerWidth){
+        let wrapHeight = scrollWrap.getBoundingClientRect().height;
+        body.style.height = Math.round(wrapHeight) + "px";
+    }
 
     offset += ((window.scrollY || window.pageYOffset) - offset) * speed;
     var scroll = "translateY(-" + offset + "px) translateZ(0)";
@@ -72,7 +74,7 @@ function smoothScroll(){
             var ContactValue = (offset-maxScrollTop+FooterSize)/FooterSize;
             footer.style.marginBottom = (FooterEffect-(ContactValue*FooterEffect))*-1 + "px";
             footer.style.opacity = ContactValue;
-            footer.style.transform = "scale(" + (1.1 + ContactValue * (1 - 1.1)) + ")";
+            // footer.style.transform = "scale(" + (1.1 + ContactValue * (1 - 1.1)) + ")";
 
             var blurAmount = 2.5;
             footer.style.filter = "blur("+ (blurAmount + ContactValue * ( 0 - blurAmount )) +"px)"
@@ -221,16 +223,32 @@ function clamp( val, min, max ){
 }
 
 //ButtonChangePos
-if(document.getElementById("backToTop")){
-    $('.backToTop').on('click', function (e) {
-        $('html, body').animate({scrollTop: 0}, 600, "easeInOutQuad");
-    });
-}
+document.getElementById("backToTop").addEventListener("click", () => {
+    changePagePos(0, 500);
+});
+document.getElementById("Contact").addEventListener("click", () => {
+    changePagePos(contentHeight, 500);
+});
 
-if(document.getElementById("Contact")){
-    $('#Contact').on('click', function (e) {
-        $('html, body').animate({scrollTop: contentHeight}, 600, "easeInOutQuad");
-    });
+function changePagePos(targetPos, duration){
+    const startTime = performance.now();
+    var SavedPos = window.scrollY;
+
+    function frame(currentTime) {
+        const elapsed = (currentTime - startTime);
+        const x = Math.min(elapsed / duration, 1);
+        const value = x < 0.5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2;
+
+        window.scrollTo({
+            top: lerp(SavedPos, targetPos, value),
+        });
+
+        if(value < 1) {
+            requestAnimationFrame(frame);
+        }
+    }
+
+    requestAnimationFrame(frame);
 }
 
 //BackToTopRotate

@@ -341,7 +341,7 @@ body:hover > #trailer{
     opacity: 0.1;
 }
 
-#loadingScreen{
+#phoneBlocker{
     position: fixed;
 
     width: 100%;
@@ -357,10 +357,21 @@ body:hover > #trailer{
     overflow: hidden;
 
     background-color: hsl(0 0% 10% / 1);
-    z-index: 10000;
+    z-index: 10001;
 }
-#loadingScreen a{
+#phoneBlocker img{
+    width: 50px;
+}
+#phoneBlocker a{
     color: hsl(0 0% 80% / 1);;
     font-family: 'SFProRegular';
-    font-size: 22.5px;
+    font-size: 17.5px;
+    text-align: center;
+
+    width: 250px;
+    padding-bottom: 30px;
+}
+#phoneBlocker.disable{
+    opacity: 0;
+    pointer-events: none;
 }
