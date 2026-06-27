@@ -151,6 +151,10 @@ function RelabelWorks(){
   }
 }
 
+window.addEventListener("load", () => {
+  document.body.classList.add("loaded");
+});
+
 //Work
 if(WorkLabel){
   RelabelWorks();

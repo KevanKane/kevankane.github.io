@@ -1,21 +1,18 @@
 @font-face {font-family: 'SFProRegular';src: url(Fonts/SFProRegular.otf);}
 @font-face {font-family: 'SFProRegularMed';src: url(Fonts/SFProRegularMed.otf);}
-@font-face {font-family: 'SFProRegularSemibold';src: url(Fonts/SFProDisplaySemibold.otf);}
-@font-face {font-family: 'SFProRegularBold';src: url(Fonts/SFProRegularBold.otf);}
 
-@font-face {font-family: 'VictorMonoLight';src: url(Fonts/VictorMonoMedium.ttf);}
 @font-face {font-family: 'VictorMono';src: url(Fonts/VictorMonoRegular.ttf);}
+@font-face {font-family: 'VictorMonoMed';src: url(Fonts/VictorMonoMedium.ttf);}
 @font-face {font-family: 'VictorMonoSemibold';src: url(Fonts/VictorMonoSemiBold.ttf);}
 @font-face {font-family: 'VictorMonoBold';src: url(Fonts/VictorMonoBold.ttf);}
 
 body{
     background-color: hsl(0 0% 10% / 1);
     margin: 0;
-
-    /* margin-bottom: 500px; */
-
+    opacity: 0;
+}
+body.loaded{
     transition-timing-function: ease;
-    /* animation-delay: 1s; */
     animation: SiteFadeIn 0.5s cubic-bezier(0.11, 0, 0.5, 0);
 }
 
@@ -26,15 +23,6 @@ body{
 
     to{
         opacity: 1;
-    }
-}
-@keyframes SiteFadeOut{
-    from{
-        opacity: 1;
-    }
-
-    to{
-        opacity: 0;
     }
 }
 
@@ -325,7 +313,7 @@ body:hover > #trailer{
     position: fixed;
 
     width: 100%;
-    height: 100%;
+    height: 0%;
     bottom: 0;
 
     display: flex;
@@ -341,11 +329,6 @@ body:hover > #trailer{
 }
 #projectTransition img{
     width: 75px;
-
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
 }
 #projectTransition a{
     color: hsl(0 0% 80% / 1);;
@@ -356,4 +339,28 @@ body:hover > #trailer{
 }
 .HiddenLabel{
     opacity: 0.1;
+}
+
+#loadingScreen{
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    overflow: hidden;
+
+    background-color: hsl(0 0% 10% / 1);
+    z-index: 10000;
+}
+#loadingScreen a{
+    color: hsl(0 0% 80% / 1);;
+    font-family: 'SFProRegular';
+    font-size: 22.5px;
 }

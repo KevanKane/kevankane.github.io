@@ -83,13 +83,21 @@ if(allHeaderNav){
     }
 }
 
-var projectMore = document.getElementsByClassName("ProjectMoreButton");
-if(projectMore[0]){
-    projectMore[0].addEventListener("click", () => {
-        const href = projectMore[0].dataset.href;
-        FadeBack(href);
-    });
+var extraButtons = [
+    ...document.getElementsByClassName('ProjectMoreButton'),
+    ...document.getElementsByClassName('HeadAboutMe')
+];
+// var projectMore = document.getElementsByClassName("ProjectMoreButton");
+if(extraButtons.length > 0){
+    for (const element of extraButtons) {
+        element.addEventListener("click", () => {
+            const href = element.dataset.href;
+            FadeBack(href);
+        });
+    }
+    
 }
+// var moreAbout = document.getElementsByClassName("HeadAboutMe")
 
 var allFooterNav = document.getElementsByClassName("menuJump");
 if(allFooterNav){
