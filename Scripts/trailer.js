@@ -42,7 +42,7 @@ window.onmousemove = e => {
     const AboutMe = e.target.closest(".HeadAboutMe");
 
     interacting = interactable !== null;
-    workTemplates.forEach(function(div){
+    for (const div of workTemplates){
         if(interacting){
             if(div == interactable){
                 div.style.opacity = 1;
@@ -52,7 +52,7 @@ window.onmousemove = e => {
         }else{
             div.style.opacity = 1;
         }
-    });
+    }
 
     if(trailer != null){
         animateTrailer(e, interactable !== null, ContactSection !== null, KevKaneWide !== null, Header != null || AboutMe != null);
