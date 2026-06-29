@@ -74,7 +74,7 @@ function smoothScroll(){
             var ContactValue = (offset-maxScrollTop+FooterSize)/FooterSize;
             footer.style.marginBottom = (FooterEffect-(ContactValue*FooterEffect))*-1 + "px";
             footer.style.opacity = ContactValue;
-            // footer.style.transform = "scale(" + (1.1 + ContactValue * (1 - 1.1)) + ")";
+            footer.style.transform = "scale(" + (1.1 + ContactValue * (1 - 1.1)) + ")";
 
             var blurAmount = 2.5;
             footer.style.filter = "blur("+ (blurAmount + ContactValue * ( 0 - blurAmount )) +"px)"

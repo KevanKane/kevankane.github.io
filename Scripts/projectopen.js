@@ -12,7 +12,7 @@ for (const element of allWork){
             transitionLabel.innerText = '<span class="HiddenLabel">' + TargetName;
             projectTransition.style.height = "0%";
 
-            playAnimation(0.8);
+            playTransition(0.8);
 
             setTimeout(() => {
                 fadeOutBody(0.25);
@@ -24,7 +24,7 @@ for (const element of allWork){
     });
 }
 
-function playAnimation(duration) {
+function playTransition(duration) {
     const startTime = performance.now();
 
     function frame(currentTime) {

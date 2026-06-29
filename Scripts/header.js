@@ -65,7 +65,6 @@ function playAnimation(duration){
 
     requestAnimationFrame(frame);
 }
-playAnimation(1);
 
 const projectSection = document.getElementById('projectSection');
 const HeadLabel = document.getElementById("headLabel");
@@ -155,37 +154,37 @@ if(window.innerHeight < window.innerWidth){
   document.getElementById('phoneBlocker').classList.add("disable");
 }
 window.addEventListener("load", () => {
+  PlayWelcomeAnimation();
   document.body.classList.add("loaded");
 });
 
-//Work
-if(WorkLabel){
-  RelabelWorks();
+function PlayWelcomeAnimation(){
+  playAnimation(1);
 
-  // projectSection.style.opacity = 0.1;
-  playWorkTextAnimation(1);
-  // setTimeout(() => {
-  //   playProjectAnimation(3);
-  // }, 150);
-}
+  //Home
+  if(HeadLabel && projectSection){
+    RelabelWorks();
+    
+    playTextAnimation(1.5);
+    projectSection.style.opacity = 0.1;
+    setTimeout(() => {
+      playProjectAnimation(3);
+    }, 150);
+  }
 
-//Home
-if(HeadLabel && projectSection){
-  RelabelWorks();
-  
-  playTextAnimation(1.5);
-  projectSection.style.opacity = 0.1;
-  setTimeout(() => {
-    playProjectAnimation(3);
-  }, 150);
-}
+  //Work
+  if(WorkLabel){
+    RelabelWorks();
+    playWorkTextAnimation(1);
+  }
 
-//About
-const aboutHd = document.getElementById("aboutHead");
-if(aboutHd){
-  var HeaderLabel = aboutHd.querySelector(".AboutHeaderLabel");
-  var HeaderTitle = aboutHd.querySelector(".AboutHeaderTitle");
-  playAboutAnimation(HeaderLabel, HeaderTitle, 1);
+  //About
+  const aboutHd = document.getElementById("aboutHead");
+  if(aboutHd){
+    var HeaderLabel = aboutHd.querySelector(".AboutHeaderLabel");
+    var HeaderTitle = aboutHd.querySelector(".AboutHeaderTitle");
+    playAboutAnimation(HeaderLabel, HeaderTitle, 1);
+  }
 }
 
 function playAboutAnimation(label, title, duration){
